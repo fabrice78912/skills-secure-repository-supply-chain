@@ -131,7 +131,7 @@ jobs:
 
       - name: Disable current workflow and enable next one
         run: |
-          gh workflow disable "Step 1"
-          gh workflow enable "Step 2"
+          gh workflow disable "1-dependency-graph.yml"
+          gh workflow enable "2-dependabot-alerts.yml"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
