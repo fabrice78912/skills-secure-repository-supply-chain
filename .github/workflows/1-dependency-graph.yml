@@ -131,7 +131,7 @@ jobs:
 
       - name: Disable current workflow and enable next one
         run: |
-          gh workflow disable "Step 1.yml"
-          gh workflow enable "Step 2.yml"
+          gh workflow disable "Step 1"
+          gh workflow enable "Step 2"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
